@@ -5,7 +5,7 @@ module.exports ={
     async checkFunction(req,res){
         const updated_data = req.body;
         
-        connection.query('SELECT * FROM company_details.company_details_table; ', (err, results, fields) => {
+        connection.query('SELECT * FROM anything.Employees; ', (err, results, fields) => {
             if (err) {
               res.status(500).send('Error fetching data');
               return;
